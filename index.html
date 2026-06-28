@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>JbCutzz Pro</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="app">
+
+  <header>
+    <h1>💈 JbCutzz</h1>
+    <p>Premium Booking Experience</p>
+  </header>
+
+  <section class="card">
+
+    <h2>Book your Cut</h2>
+
+    <input type="date" id="date"/>
+
+    <div id="slots"></div>
+
+    <input type="text" id="name" placeholder="Your Name"/>
+    <input type="text" id="ig" placeholder="Instagram (optional)"/>
+
+    <button onclick="book()">Book Appointment</button>
+
+  </section>
+
+  <section class="card admin">
+
+    <h2>Admin Access</h2>
+
+    <input type="password" id="adminPass"/>
+    <button onclick="login()">Login</button>
+
+    <div id="adminPanel" class="hidden">
+
+      <h3>Appointments</h3>
+      <div id="bookings"></div>
+
+    </div>
+
+  </section>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
